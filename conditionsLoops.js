@@ -69,7 +69,7 @@ else{
 // Write a JavaScript program to find leap years from 2000 to 2022
 
 for(year = 2000; year <= 2022; year++){
-    if(year% 4 ===0){
+    if(year% 4 ===0 && year % 100 !== 0 || year % 400 === 0){
         console.log(year + " is a leap year")
     }
 }
